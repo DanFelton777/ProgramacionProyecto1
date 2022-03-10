@@ -19,6 +19,14 @@ public class Personaje{
     public Personaje (String nombre, String especie, String nacionalidad, int edad)
     {this.nombre=nombre;
     this.edad=edad;}
+
+    Personaje(String nombre, String especie, String nacionalidad, int edad, String colegio, String casa) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    Personaje(String nombre, String especie, String nacionalidad, int edad, String colegio) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     //Nombre
     public String getNombre()

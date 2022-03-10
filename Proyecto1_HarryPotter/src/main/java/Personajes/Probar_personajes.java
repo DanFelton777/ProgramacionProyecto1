@@ -16,27 +16,53 @@ public class Probar_personajes {
             
    //Insertar informacion a través del teclado 
    String nombre;
-   String especie;
    String nacionalidad;
    int edad;
+   String especie;
+   String colegio;
+   String casa;
   
         Scanner a = new Scanner(System.in);
         System.out.print("Introduzca su nombre: ");
         nombre = a.nextLine();
-        
+     
         Scanner b = new Scanner(System.in);
-        System.out.print("Introduzca su especie: ");
-        especie = b.nextLine();
-               
-        Scanner c = new Scanner(System.in);
         System.out.print("Introduzca su nacionalidad: ");
-        nacionalidad = c.nextLine();  
+        nacionalidad = b.nextLine();  
         
-        Scanner d = new Scanner (System.in);
+        Scanner c = new Scanner (System.in);
         System.out.println("Por favor introduzca su fecha de nacimiento (numero): ");
-        edad=d.nextInt();
-        
-        Personaje personaje1= new Personaje (nombre,especie,nacionalidad,edad);
+        edad=c.nextInt();
+                
+       Scanner d = new Scanner(System.in);
+       System.out.print("Introduzca su especie: ");
+       especie = d.nextLine(); 
+       
+       //Si es mago o bruja entonces le pide su colegio
+       String mago = "mago";
+       String bruja = "bruja";
+
+       if (especie.equalsIgnoreCase(mago) || especie.equalsIgnoreCase(bruja))
+       {Scanner e = new Scanner (System.in);
+        System.out.println("Por favor introduzca el nombre de su Alma mater");
+        colegio=e.nextLine(); 
+       
+       // En caso de tener un colegio con casas pregunta su casa
+       String ilvermory= "Ilvermory";
+       String hogwarts= "Howarts";
+       
+       if (colegio.equalsIgnoreCase(ilvermory) || colegio.equalsIgnoreCase(hogwarts))
+       {Scanner f = new Scanner (System.in);
+        System.out.println("Por favor introduzca el nombre de su casa");
+        casa=f.nextLine();
+       
+       Personaje personaje1= new Personaje (nombre,especie,nacionalidad,edad,colegio,casa);}
+       
+       else 
+       {Personaje personaje2= new Personaje (nombre,especie,nacionalidad,edad,colegio);}
+       }
+       
+      
          
   
   
