@@ -16,17 +16,24 @@ public class Personaje{
     public String nacionalidad;
     public int edad;
     
+    public String especies_caracteristicas;
+    
     public Personaje (String nombre, String especie, String nacionalidad, int edad)
     {this.nombre=nombre;
     this.edad=edad;}
 
-    Personaje(String nombre, String especie, String nacionalidad, int edad, String colegio, String casa) {
+    Personaje(String nombre, String especie, String nacionalidad, int edad, String colegio, String casa, String especies_caracteristicas) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    Personaje(String nombre, String especie, String nacionalidad, int edad, String colegio, String especies_caracteristicas) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     Personaje(String nombre, String especie, String nacionalidad, int edad, String colegio) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
     
     //Nombre
     public String getNombre()
@@ -57,13 +64,16 @@ public class Personaje{
               
     public void setEdad(int edad)        
     {this.edad = 2022-edad; }
- 
+    
+    
+  
     //llamando
     
     public String imprime ()
-    { return "Su nombre es " +getNombre()+ ", es  " +getEspecie () + "su nacionalidad es "+ getNacionalidad()+
-            ", su edad es " +getEdad();
-    }             
+    { return "Su nombre es " +getNombre()+ ", es  " +getEspecie () + "su nacionalidad es "+ getNacionalidad();
+      //+", su edad es " +getEdad()+". "+getEspecieCaracteristicas();
+    }      
+    
    @Override
     public String toString(){
         return "especie: "+getEspecie()+" nombre: "+getNombre() +"nacionalidad"+getNacionalidad()+ "edad:" +getEdad();}

@@ -11,6 +11,8 @@ package Personajes;
 import java.util.Scanner;
 
 public class Probar_personajes {
+
+ 
     
     public static void main(String[] args) {
             
@@ -18,8 +20,8 @@ public class Probar_personajes {
    String nombre;
    String nacionalidad;
    int edad;
-   String especie;
    String colegio;
+   String especie;
    String casa;
   
         Scanner a = new Scanner(System.in);
@@ -56,10 +58,10 @@ public class Probar_personajes {
         System.out.println("Por favor introduzca el nombre de su casa");
         casa=f.nextLine();
        
-       Personaje personaje1= new Personaje (nombre,especie,nacionalidad,edad,colegio,casa);}
+       Personaje personaje1= new Personaje (nombre,especie,nacionalidad,edad,colegio,casa );}
        
        else 
-       {Personaje personaje2= new Personaje (nombre,especie,nacionalidad,edad,colegio);}
+       {Personaje personaje2= new Personaje (nombre,especie,nacionalidad,edad,colegio );}
        }
        
       
@@ -73,4 +75,5 @@ public class Probar_personajes {
    //Personaje personaje2= newPersonaje (ViktorKrum,mago,bulgara,1997); 
    
     }
+    private String Sring;
 }
