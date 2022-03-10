@@ -56,10 +56,8 @@ public class Personaje{
     { return "Su nombre es " +getNombre()+ ", es  " +getEspecie () + "su nacionalidad es "+ getNacionalidad()+
             ", su edad es " +getEdad();
     }             
-    
-    @Override
+   @Override
     public String toString(){
-        return "especie: "+getEspecie()+" nombre: "+getNombre();}
-    
+        return "especie: "+getEspecie()+" nombre: "+getNombre() +"nacionalidad"+getNacionalidad()+ "edad:" +getEdad();}
     
 }
